@@ -1,0 +1,29 @@
+﻿@model IEnumerable<PhoneBookMVCApp.Models.People>
+@{
+    ViewBag.Title = "ManagePeople";
+}
+
+
+<table class="table table-active">
+    <tr>
+        <td><h3>Name</h3></td>
+        <td><h3>Surname</h3></td>
+    </tr>
+
+    <tbody>
+        @foreach (var ppl in Model)
+        {
+            <tr>
+                <td>@ppl.perName</td>
+                <td>@ppl.perSurname</td>
+                <td>@Html.ActionLink("Delete", "Delete", new { id = ppl.id }, new { @class = "btn btn-danger", onclick = "return confirm('Are you sure ?')" })</td>
+                <td>@Html.ActionLink("Update", "Edit", new { id = ppl.id }, new { @class = "btn btn-primary" })</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/People/Index" class="btn btn-default">Back to Home</a>
+
+

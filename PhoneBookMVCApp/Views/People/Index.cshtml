@@ -1,0 +1,38 @@
+﻿@model IEnumerable<PhoneBookMVCApp.Models.People>
+@{
+    ViewBag.Title = "Index";
+}
+<a href="/People/AddPerson" class="btn btn-success" style="margin-top:40px">New Person</a>
+
+@using (Html.BeginForm("Index", "People", FormMethod.Get))
+{
+    <p style="margin-top:20px">
+        Search Person: @Html.TextBox("p")
+        <input type="submit" value="Search"/>
+    </p>
+}
+
+
+<table class="table table-active" style="margin-top:5px">
+    <tr>
+        <td><h3>Name</h3></td>
+        <td><h3>Surname</h3></td>
+        <td><h3>E-mail</h3></td>
+        <td><h3>Phone</h3></td>
+        <td><h3>Birthday</h3></td>
+    </tr>
+    <tbody>
+        @foreach (var ppl in Model)
+        {
+            <tr>
+                <td>@ppl.perName</td>
+                <td>@ppl.perSurname</td>
+                <td>@ppl.email</td>
+                <td>@ppl.perPhone</td>
+                <td>@ppl.birthday</td>
+
+                <td>@Html.ActionLink("Details", "Detail", new { id = ppl.id }, new { @class = "btn btn-info" })</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+</head>
+
+<body background="https://www.pngarts.com/files/10/Border-Frame-PNG-Free-Download.png" style="padding-top:0px;">
+
+    <nav class="navbar navbar-dark bg-info" style="margin-top:initial">
+        <!-- Navbar content -->
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "People")</li>
+                    <li>@Html.ActionLink("Manage People", "ManagePeople", "People")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "People")</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content" style="margin-top:70px">
+        @RenderBody()
+       
+        <hr />
+        <footer>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
