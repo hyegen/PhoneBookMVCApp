@@ -90,14 +90,5 @@ namespace PhoneBookMVCApp.Controllers
         {
             return View();
         }
-        //public ActionResult Search(int id)
-        //{
-
-        //    People src= db.Peoples.FirstOrDefault(k => k.id == id);
-        //    return View(src);
-
-        //    //List<People> peoples = db.Peoples.ToList();
-        //    //return View(peoples); 
-        //}
     }
 }
