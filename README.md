@@ -1,3 +1,3 @@
 # PhoneBookMVCApp
 
-// I used Entity Framework Code-First in this project.
+// I've used Entity Framework Code-First in this project.
