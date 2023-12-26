@@ -158,6 +158,10 @@
     <Compile Include="Migrations\202312261140365_mig_udpated_people_entity.Designer.cs">
       <DependentUpon>202312261140365_mig_udpated_people_entity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312261210220_mig_updated_phone_number_feature_in_people_entity.cs" />
+    <Compile Include="Migrations\202312261210220_mig_updated_phone_number_feature_in_people_entity.Designer.cs">
+      <DependentUpon>202312261210220_mig_updated_phone_number_feature_in_people_entity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\People.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -272,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312261140365_mig_udpated_people_entity.resx">
       <DependentUpon>202312261140365_mig_udpated_people_entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312261210220_mig_updated_phone_number_feature_in_people_entity.resx">
+      <DependentUpon>202312261210220_mig_updated_phone_number_feature_in_people_entity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

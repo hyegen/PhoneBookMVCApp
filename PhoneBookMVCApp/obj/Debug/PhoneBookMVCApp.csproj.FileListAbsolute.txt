@@ -193,3 +193,4 @@ C:\Users\h.yegen\Source\Repos\hyegen\PhoneBookMVCApp\PhoneBookMVCApp\obj\Debug\P
 C:\Users\h.yegen\Source\Repos\hyegen\PhoneBookMVCApp\PhoneBookMVCApp\obj\Debug\PhoneBookMVCApp.dll
 C:\Users\h.yegen\Source\Repos\hyegen\PhoneBookMVCApp\PhoneBookMVCApp\obj\Debug\PhoneBookMVCApp.pdb
 C:\Users\h.yegen\Source\Repos\hyegen\PhoneBookMVCApp\PhoneBookMVCApp\obj\Debug\PhoneBookMVCApp.Migrations.mig_udpated_people_entity.resources
+C:\Users\h.yegen\Source\Repos\hyegen\PhoneBookMVCApp\PhoneBookMVCApp\obj\Debug\PhoneBookMVCApp.Migrations.mig_updated_phone_number_feature_in_people_entity.resources

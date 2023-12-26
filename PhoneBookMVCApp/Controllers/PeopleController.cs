@@ -24,8 +24,8 @@ namespace PhoneBookMVCApp.Controllers
 
             return View(values.ToList());
         }
-        [HttpGet]
 
+        [HttpGet]
         public ActionResult AddPerson()
         {
             return View();
@@ -34,7 +34,6 @@ namespace PhoneBookMVCApp.Controllers
         [HttpPost]
         public ActionResult AddPerson(People p1)
         {
-
             if (ModelState.IsValid)
             {
                 db.Peoples.Add(p1);
@@ -68,16 +67,23 @@ namespace PhoneBookMVCApp.Controllers
 
         public ActionResult Edit(People ppl)
         {
-            People people = db.Peoples.Where(x => x.id == ppl.id).FirstOrDefault();
-            people.id = ppl.id;
-            people.perName = ppl.perName;
-            people.perSurname = ppl.perSurname;
-            people.email = ppl.email;
-            people.perPhone = ppl.perPhone;
-
-            db.SaveChanges();
-            ViewBag.sonuc = "Person Updated";
-            return View();
+            try
+            {
+                People people = db.Peoples.Where(x => x.id == ppl.id).FirstOrDefault();
+                people.id = ppl.id;
+                people.perName = ppl.perName;
+                people.perSurname = ppl.perSurname;
+                people.email = ppl.email;
+                people.perPhone = ppl.perPhone;
+                people.birthday = ppl.birthday;
+                db.SaveChanges();
+                return View();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+           
         }
 
         [HttpGet]

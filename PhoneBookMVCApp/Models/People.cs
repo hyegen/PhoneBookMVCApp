@@ -20,7 +20,7 @@ namespace PhoneBookMVCApp.Models
         public string email { get; set; }
         [DisplayName("Contact Phone")]
         [DataType(DataType.PhoneNumber)]
-        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid phone number")]
+        //[RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid phone number")]
         [Required(ErrorMessage = "All Contact Fields Are")]
         public string perPhone { get; set; }                //SOR !!!!!!!!!2
         [Required(ErrorMessage = "Please enter Age")]
