@@ -26,7 +26,7 @@ namespace PhoneBookMVCApp.Models
         [Required(ErrorMessage = "Please enter Age")]
         public int age { get; set; }
         [Required(ErrorMessage = "Date of birth is required")]
-        [DataType(DataType.Date)]
-        public int birthday { get; set; }
+        [DataType(DataType.DateTime)]
+        public DateTime birthday { get; set; }
     }
 }
